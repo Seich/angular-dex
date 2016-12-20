@@ -1,0 +1,36 @@
+body {
+    background: #3C4B5A;
+    font-family: 'PT Serif';
+}
+
+pokemon-list {
+    text-align: center;
+}
+
+pokemon-list li {
+    display: inline-block;
+    width: 33%;
+    background: white;
+    box-sizing: border-box;
+    vertical-align: middle;
+    height: 225px;
+    width: 225px;
+    text-align: center;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+pokemon-list img {
+    height: 75px;
+}
+
+pokemon-list h1,
+pokemon-list h2 {
+    text-transform: capitalize;
+    color: #28323c;
+    font-size: 1.4em;
+}
+
+pokemon-list h2 {
+    font-size: 
+}

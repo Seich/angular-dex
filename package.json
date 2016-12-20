@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Seich/angular-dex/issues"
   },
-  "homepage": "https://github.com/Seich/angular-dex#readme"
+  "homepage": "https://github.com/Seich/angular-dex#readme",
+  "dependencies": {
+    "angular": "^1.6.0"
+  }
 }

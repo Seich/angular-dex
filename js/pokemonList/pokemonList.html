@@ -1,7 +1,9 @@
-<ul>
-	<li ng-repeat="pokemon in $ctrl.pokemon">
-		<h2>#{{$index + 1}}</h2>
-		<img src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/{{pokemon.name}}.gif" alt="">
-		<h1>{{pokemon.name}}</h1>
-	</li>
-</ul>
+<div>
+	<input type="text" placeholder="Search" ng-model="$ctrl.query.name">
+</div>
+
+<pokemon-list-item 
+	ng-repeat="pokemon in $ctrl.pokemon | filter:$ctrl.query"
+	index="{{$index + 1}}" 
+	pokemon="pokemon">
+</pokemon-list-item>

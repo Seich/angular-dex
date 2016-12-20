@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Seich/angular-dex#readme",
   "dependencies": {
-    "angular": "^1.6.0"
+    "angular": "^1.6.0",
+    "angular-ui-router": "^1.0.0-beta.3"
   }
 }

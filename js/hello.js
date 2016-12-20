@@ -1,13 +1,15 @@
+app.config(($stateProvider) => {
+	$stateProvider.state('home', {
+		url: '/hello/:name',
+		component: 'hello'
+	});
+});
+
 app.component('hello', {
 	templateUrl: '/js/hello.html',
-	bindings: {
-		name: '@'
-	},
-	controller: function(User) {
-		User.getProfile().then((res) => {
-			this.name = res.data.name;
-		});
-
+	controller: function($stateParams) {
+		this.name = $stateParams.name;
+		
 		this.alert = () => {
 			alert('Hello,' + this.name)
 		};

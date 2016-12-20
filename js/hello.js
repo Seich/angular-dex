@@ -3,7 +3,11 @@ app.component('hello', {
 	bindings: {
 		name: '@'
 	},
-	controller: function() {
+	controller: function(User) {
+		User.getProfile().then((res) => {
+			this.name = res.data.name;
+		});
+
 		this.alert = () => {
 			alert('Hello,' + this.name)
 		};

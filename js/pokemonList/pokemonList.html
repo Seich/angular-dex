@@ -4,6 +4,6 @@
 
 <pokemon-list-item 
 	ng-repeat="pokemon in $ctrl.pokemon | filter:$ctrl.query"
-	index="{{$index + 1}}" 
+	ui-sref="pokemonDetail({ name: pokemon.name })" 
 	pokemon="pokemon">
 </pokemon-list-item>

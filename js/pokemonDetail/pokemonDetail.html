@@ -1,0 +1,9 @@
+<h1>{{$ctrl.pokemon.name}}</h1>
+
+<img ng-src="http://www.pkparaiso.com/imagenes/xy/sprites/animados/{{$ctrl.pokemon.name}}.gif">
+
+<ul>
+	<li ng-repeat="stat in $ctrl.pokemon.stats">
+		<b>{{stat.stat.name}}</b>: {{stat.base_stat}}
+	</li>
+</ul>

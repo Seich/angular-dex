@@ -28,6 +28,7 @@ pokemon-list input[type="text"] {
 }
 
 pokemon-list-item {
+    cursor: pointer;
     background: white;
     border-radius: 5px;
     box-sizing: border-box;
@@ -37,6 +38,15 @@ pokemon-list-item {
     text-align: center;
     vertical-align: middle;
     width: 225px;
+    transition: transform 0.25s ease;
+}
+
+pokemon-list-item:hover {
+    transform: scale(1.1);
+}
+
+pokemon-list-item:active {
+    transform: scale(0.9);
 }
 
 pokemon-list-item .pokemon-list-item__img {
@@ -83,4 +93,37 @@ pokemon-list-item h1:after {
     right: -30px;
     border: white 15px solid;
     border-color: transparent transparent white white;
+}
+
+pokemon-detail {
+    background: white;
+    display: block;
+    width: 30%;
+    text-align: center;
+    padding: 1em;
+    margin: 1em auto;
+    border-radius: 5px;
+}
+
+pokemon-detail h1 {
+    text-transform: capitalize;
+}
+
+pokemon-detail ul {
+    padding-top: 1em;
+    width: 40%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+pokemon-detail li {
+    list-style: none;
+}
+
+pokemon-detail img {
+    height: 150px;
+}
+
+pokemon-detail b {
+    text-transform: capitalize;
 }

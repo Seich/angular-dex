@@ -6,4 +6,8 @@ app.service('pokemon', function($http) {
 			}
 		});
 	};
+
+	this.get = (name) => {
+		return $http.get('http://pokeapi.co/api/v2/pokemon/' + name);
+	};
 });
